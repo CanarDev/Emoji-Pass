@@ -1,11 +1,17 @@
 {
-  "name": "emoji-pass",
+  "name": "emoji-password-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Un générateur de mots de passe basé sur des emojis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "node index.js",
+    "example": "node example.js"
   },
-  "author": "Vincent MICHEL, Antoine BENDAFI & Yannis OBERT",
-  "license": "MIT"
+  "author": "Vincent Michel",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "jest": "^27.0.0"
+  }
 }
