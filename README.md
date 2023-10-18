@@ -171,7 +171,6 @@ Par exemple, permettre aux utilisateurs de mélanger des emojis avec des caract�
 
 ###### Interface utilisateur :
 Développement d'une interface utilisateur simple pour que les utilisateurs puissent générer des mots de passe sans avoir à écrire de code.
-Intégration continue :
 
 ###### Amélioration des workflows GitHub Actions
  Pour automatiser davantage de tâches, comme l'exécution de tests à chaque pull request.
