@@ -1,4 +1,5 @@
-const emojis = require('./emoji-list');
+import emojis from './emoji-list.js';
+
 
 function generatePassword(length) {
     if (typeof length !== "number" || length <= 0) {
@@ -14,4 +15,4 @@ function generatePassword(length) {
     return password;
 }
 
-module.exports = generatePassword;
+export default generatePassword;

@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     '😀','😃','😄','😁','😆','😅','😂','🤣','😊','😇','👩','😡','🫣','🤮','🤡','🎃','👋','🤩','🥶'
-    // ... ajoutez autant d'emojis que vous le souhaitez ici
+    // ... ajoutez autant d'emojis que vous le souhaitez ici !
 ];
