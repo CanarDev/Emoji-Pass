@@ -1,20 +1,19 @@
 # Emoji-Pass
 ![DALL·E 2023-10-17 10 42 26 - Vector logo for an npm package that generates password based on emojis  The design showcases a lock symbol made up of various colorful emojis, represe](https://github.com/CanarDev/Emoji-Pass/assets/87917626/8dca39a5-d844-4b0c-9bea-366ef920f220)
 
-## Besoins
-À l'ère numérique actuelle, la sécurité est primordiale. La complexité des mots de passe est essentielle pour garantir la sécurité des comptes en ligne. Cependant, les mots de passe alphanumériques utilisés à l'unanimité aujourd'hui peuvent être difficiles à retenir.
- Pourquoi ne pas les rendre à la fois sécurisés et amusants en utilisant des emojis ?
+## Needs
+In today's digital age, security is paramount. Password complexity is essential to ensuring the security of online accounts. However, today's commonly used alphanumeric passwords can be difficult to remember.
+Why not make them both secure and fun by using emojis?
 
-## Problématique
-Comment peut-on créer des mots de passe mémorables tout en conservant un niveau de sécurité élevé ? Les mots de passe basés sur des emojis peuvent être la solution.
+## Problematic
+How can you create memorable passwords while maintaining a high level of security? Emoji-based passwords may be the solution.
+## Package
 
-## Bibliothèque
+Package name: emoji-password-generator
 
-Nom de la bibliothèque : emoji-pass
+Description: Emoji-based password generator
 
-Description : Générateur de mots de passe basé sur des emojis
-
-lien vers la bibliothèque : https://www.npmjs.com/package/emoji-pass
+link to the package: https://www.npmjs.com/package/emoji-password-generator
 
 
 ## Code
@@ -37,18 +36,17 @@ lien vers la bibliothèque : https://www.npmjs.com/package/emoji-pass
 ## Installation
 
 ```
-npm install emoji-pass
+npm i emoji-password-generator
 ``` 
 ou 
 
 ```
-yarn add emoji-pass
+yarn add emoji-password-generator
 ```
 
-## Exemple d'utilisation
+## Example of use
 
-Après avoir installé le package, pour générer un mot de passe basé sur des emojis, exécutez simplement la commande :
-
+After installing the package, to generate an emoji-based password, simply run the command:
 ```
 npm example
 ``` 
@@ -61,99 +59,95 @@ yarn example
 ## Documentation 
 
 ##### Introduction
-Le "Générateur de Mot de Passe Emoji" est une bibliothèque conçue pour créer des mots de passe mémorables à partir d'emojis. Ces mots de passe, tout en étant amusants, offrent également un niveau de complexité différent des mots de passe alphanumériques traditionnels.
+“Emoji Password Generator” is a library designed to create memorable passwords from emojis. These passwords, while fun, also offer a different level of complexity than traditional alphanumeric passwords.
+##### Project structure
 
-##### Structure du projet
+The project is structured around three main files:
 
-Le projet est structuré autour de trois fichiers principaux:
-
-1. index.js: C'est le cœur de la bibliothèque où la logique de génération des mots de passe est implémentée.
-2. emoji-list.js: Contient une liste d'emojis qui sont utilisés pour générer les mots de passe.
-3. example.js: Fournit un exemple d'utilisation de la bibliothèque.
+1. index.js: This is the core of the library where the password generation logic is implemented.
+2. emoji-list.js: Contains a list of emojis that are used to generate passwords.
+3. example.js: Provides an example of using the library.
 
 ```
 function generatePassword(length) 
 ```
-Cette fonction est le principal point d'entrée de la bibliothèque. Elle génère un mot de passe composé d'emojis basé sur la longueur spécifiée par : 
+This function is the main entry point to the library. It generates an emoji password based on the length specified by:
 
-###### Paramètres
+###### Settings
 
 length
 
-Type : number
-Description : Le nombre d'emojis que vous souhaitez dans le mot de passe généré. Il doit être positif.
-Exemple : si dans le fichier generator.test.js 
+Type: number
+Description: The number of emojis you want in the generated password. It must be positive.
+Example: if in the generator.test.js file
 ```
 const length = 5;
 ```
-ce qui signifie que l'utilisateur souhaite un mot de passe composé de 5 emojis.
-alors le mot de passe généré sera composé de 5 emojis.
+Which means the user wants a password consisting of 5 emojis.
+Then the generated password will be composed of 5 emojis.
 
-
-###### Valeur de retour
+###### Return value
 
 ```
 return password;
 ```
 
-Type : string
-Description : Retourne un mot de passe composé d'emojis. La longueur de cette chaîne correspond au paramètre length fourni.
+Type: string
+Description: Returns a password composed of emojis. The length of this string corresponds to the length parameter provided.
+###### Error management
+If the length parameter is not of type number or if it is less than or equal to zero, the function will throw an exception with the message: "Invalid password length specified".
 
-###### Gestion des erreurs
-Si le paramètre length n'est pas de type number ou s'il est inférieur ou égal à zéro, la fonction lancera une exception avec le message : "Invalid password length specified".
-
-###### Fichier emoji-list.js
-Ce fichier contient un tableau d'emojis qui sont utilisés par la fonction generatePassword.
-
+###### File emoji-list.js
+This file contains an array of emojis that are used by the generatePassword function.
 ```
 module.exports = [
     '😀','😃','😄','😁'
-    // ... ajoutez autant d'emojis que vous le souhaitez ici
+    // ... add as many emojis as you want here
 ];
 ```
 ###### Tests
-Des tests sont fournis pour garantir le bon fonctionnement de la bibliothèque :
+Tests are provided to ensure the library functions properly:
 
-- Vérification de la longueur du mot de passe généré : Ce test s'assure que le mot de passe généré a bien la longueur spécifiée. Notez que la longueur est multipliée par 2 car chaque emoji est représenté par deux caractères.
+- Checking the length of the generated password: This test ensures that the generated password has the specified length. Note that the length is multiplied by 2 because each emoji is represented by two characters.
 
-- Vérification de la composition du mot de passe : Ce test vérifie que le mot de passe généré est bien composé uniquement d'emojis.
+- Verification of the composition of the password: This test verifies that the generated password is composed only of emojis.
 
-Pour exécuter ces tests, utilisez une commande appropriée comme 
+To run these tests, use an appropriate command like
 ```
 npm test
 ``` 
-ou 
+or
 ```
 yarn test
 ```
-selon votre configuration.
+depending on your configuration.
 
-###### Utilisation avec example.js
-Le fichier d'exemple, example.js, montre comment utiliser la bibliothèque. Pour exécuter cet exemple :
+###### Use with example.js
+The example file, example.js, demonstrates how to use the library. To run this example:
 
 ```
 npm example
 ``` 
-ou 
+or
 
 ```
 yarn example
 ```
 
-L'exécution de cette commande affichera un mot de passe emoji généré dans la console.
+Running this command will display a generated emoji password in the console.
 
 ## Tests
 
-Des tests ont été écrits pour s'assurer de la validité des mots de passe générés. Ces tests vérifient 
-- la longueur du mot de passe généré 
-- que le mot de passe contient uniquement des emojis.
+Tests have been written to ensure the validity of the generated passwords. These tests check
+- the length of the generated password
+- that the password contains only emojis.
 
-Pour exécuter les tests, exécutez la commande suivante:
+To run the tests, run the following command:
 
 ```
 npm test
 ``` 
-ou 
+or
 
 ```
 yarn test
@@ -162,19 +156,18 @@ yarn test
 
 ## Roadmap
 
-###### Extension de la liste d'emojis :
-Actuellement, le générateur utilise une liste fixe d'emojis. Nous prévoyons d'étendre cette liste pour offrir plus de variété dans les mots de passe générés.
-Options de configuration :
+###### Extending the emoji list:
+Currently the generator uses a fixed list of emojis. We plan to expand this list to provide more variety in generated passwords.
+Configuration options:
 
-###### Introduction d'options pour personnaliser la génération des mots de passe.
-Par exemple, permettre aux utilisateurs de mélanger des emojis avec des caractères alphanumériques.
+###### Introduction of options to customize password generation.
+For example, allowing users to mix emojis with alphanumeric characters.
 
-###### Interface utilisateur :
-Développement d'une interface utilisateur simple pour que les utilisateurs puissent générer des mots de passe sans avoir à écrire de code.
+###### User interface:
+Developed a simple user interface so users can generate passwords without having to write any code.
 
-###### Amélioration des workflows GitHub Actions
- Pour automatiser davantage de tâches, comme l'exécution de tests à chaque pull request.
+###### Improved GitHub Actions workflows
+To automate more tasks, like running tests on every pull request.
 
-###### Support multilingue :
-
-Bien que les emojis soient universels, nous envisageons d'ajouter des documentations et des interfaces dans différentes langues pour rendre le générateur accessible à un public plus large.
+###### Multilingual support:
+Although emojis are universal, we plan to add documentations and interfaces in different languages ​​to make the generator accessible to a wider audience.
