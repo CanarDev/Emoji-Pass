@@ -1,7 +1,17 @@
 import emojis from './emoji-list.js';
 
 function generateEmojiPassword(length) {
-    return generatePasswordFromCharacters(length, emojis);
+    if (typeof length !== "number" || length <= 0) {
+        throw new Error("Invalid password length specified");
+    }
+
+    let password = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * emojis.length);
+        password += emojis[randomIndex];
+    }
+
+    return password;
 }
 
 function generateHybridPassword(length) {
@@ -17,21 +27,6 @@ function generateHybridPassword(length) {
             const randomCharIndex = Math.floor(Math.random() * chars.length);
             password += chars[randomCharIndex];
         }
-    }
-
-    return password;
-}
-
-
-function generatePasswordFromCharacters(length, characters) {
-    if (typeof length !== "number" || length <= 0) {
-        throw new Error("Invalid password length specified");
-    }
-
-    let password = '';
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * characters.length);
-        password += characters[randomIndex];
     }
 
     return password;
