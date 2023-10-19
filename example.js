@@ -1,4 +1,7 @@
-const generatePassword = require('./index');
+import { generateEmojiPassword, generateHybridPassword } from './index.js';
 
-const passwordExample = generatePassword(10)
-console.log("the password is: " + passwordExample)
+const emojiPassword = generateEmojiPassword(10);
+console.log("Emoji Password: " + emojiPassword);
+
+const hybridPassword = generateHybridPassword(10);
+console.log("Hybrid Password: " + hybridPassword);
