@@ -127,6 +127,7 @@ yarn test
 depending on your configuration.
 
 Result of test: 
+
 ![img.png](img.png)
 
 ###### Use with example.js
