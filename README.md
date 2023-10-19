@@ -56,6 +56,10 @@ or
 yarn example
 ```
 
+Result of example:
+
+![img_1.png](img_1.png)
+
 ## Documentation 
 
 ##### Introduction
@@ -122,6 +126,9 @@ yarn test
 ```
 depending on your configuration.
 
+Result of test: 
+![img.png](img.png)
+
 ###### Use with example.js
 The example file, example.js, demonstrates how to use the library. To run this example:
 
@@ -135,6 +142,10 @@ yarn example
 ```
 
 Running this command will display a generated emoji password in the console.
+
+Result of example:
+
+![img_1.png](img_1.png)
 
 ## Tests
 
@@ -153,6 +164,9 @@ or
 yarn test
 ```
 
+Result of test:
+
+![img.png](img.png)
 
 ## Roadmap
 
