@@ -198,17 +198,17 @@ To automate more tasks, like running tests on every pull request.
 Although emojis are universal, we plan to add documentations and interfaces in different languages ​​to make the generator accessible to a wider audience.
 
 ## Changelog
-**v1.0.0** - 2023-10-18:
-- Add emoji password generator
-- Add emoji password test
-- Add emoji password example
-
-**v1.0.1** - 2023-10-18:
-- Fix translation in README
+**v2.0.0** - 2023-10-19:
+- Add password generation with emoji
+- Update examples
 
 **v1.1.0** - 2023-10-18:
 - Update module file imports
 
-**v2.0.0** - 2023-10-19:
-- Add password generation with emoji
-- Update examples
+**v1.0.1** - 2023-10-18:
+- Fix translation in README
+
+**v1.0.0** - 2023-10-18:
+- Add emoji password generator
+- Add emoji password test
+- Add emoji password example
