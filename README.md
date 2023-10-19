@@ -199,7 +199,7 @@ Although emojis are universal, we plan to add documentations and interfaces in d
 
 ## Changelog
 **v2.0.0** - 2023-10-19:
-- Add password generation with emoji
+- Add password generation with emoji & characters
 - Update examples
 
 **v1.1.0** - 2023-10-18:
