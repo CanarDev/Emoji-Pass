@@ -38,7 +38,7 @@ link to the package: https://www.npmjs.com/package/emoji-password-generator
 ```
 npm i emoji-password-generator
 ``` 
-ou 
+or
 
 ```
 yarn add emoji-password-generator
@@ -50,7 +50,7 @@ After installing the package, to generate an emoji-based password, simply run th
 ```
 npm example
 ``` 
-ou 
+or
 
 ```
 yarn example
@@ -171,3 +171,15 @@ To automate more tasks, like running tests on every pull request.
 
 ###### Multilingual support:
 Although emojis are universal, we plan to add documentations and interfaces in different languages ​​to make the generator accessible to a wider audience.
+
+## Changelog
+**v1.0.0** - 2023-10-18:
+- Add emoji password generator
+- Add emoji password test
+- Add emoji password example
+
+**v1.0.1** - 2023-10-18:
+- Fix translation in README
+
+**v1.1.0** - 2023-10-18:
+- Update module file imports
