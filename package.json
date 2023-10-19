@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest",
     "dev": "node index.js",
-    "example": "node example.js"
+    "exampleEmojiPassword": "node examples/exampleEmojiPassword.js",
+    "exampleHybridPassword": "node examples/exampleHybridPassword.js"
   },
   "author": "Vincent Michel",
   "license": "MIT",
