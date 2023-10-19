@@ -212,3 +212,11 @@ Although emojis are universal, we plan to add documentations and interfaces in d
 - Add emoji password generator
 - Add emoji password test
 - Add emoji password example
+
+## Collaborators:
+- [OBERT Yannis](https://github.com/yannisobert)
+- [MICHEL Vincent](https://github.com/CanarDev)
+- [BENDAFI Antoine](https://github.com/AntoineBendafiSchulmann)
+
+## License:
+[MIT License](https://github.com/CanarDev/Emoji-Pass/blob/main/LICENSE)
