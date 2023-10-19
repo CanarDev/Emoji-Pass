@@ -75,7 +75,7 @@ The project is structured around three main files:
 ```
 function generatePassword(length) 
 ```
-This function is the main entry point to the library. It generates an emoji password based on the length specified by:
+This function is the main entry point to the library. It generates an emoji password based on the length specified by user.
 
 ###### Settings
 
