@@ -26,8 +26,10 @@ link to the package: https://www.npmjs.com/package/emoji-password-generator
  ┣ 📂node_modules
  ┣ 📂tests
  ┃ ┗ 📜generator.test.js
+ ┣ 📂examples
+ ┃ ┗ 📜exampleEmojiPassword.js
+ ┃ ┗ 📜exampleHybridPassword.js
  ┣ 📜emoji-list.js
- ┣ 📜example.js
  ┣ 📜index.js
  ┗ 📜package.json
 ```
@@ -38,7 +40,7 @@ link to the package: https://www.npmjs.com/package/emoji-password-generator
 ```
 npm i emoji-password-generator
 ``` 
-ou 
+or
 
 ```
 yarn add emoji-password-generator
@@ -48,13 +50,21 @@ yarn add emoji-password-generator
 
 After installing the package, to generate an emoji-based password, simply run the command:
 ```
-npm example
+npm exampleEmojiPassword
+npm exampleHybridPassword
 ``` 
-ou 
+or
 
 ```
-yarn example
+yarn exampleEmojiPassword
+yarn exampleHybridPassword
 ```
+
+Results of example:
+
+![img.png](pictures/img.png)
+
+![img_1.png](pictures/img_1.png)
 
 ## Documentation 
 
@@ -71,7 +81,7 @@ The project is structured around three main files:
 ```
 function generatePassword(length) 
 ```
-This function is the main entry point to the library. It generates an emoji password based on the length specified by:
+This function is the main entry point to the library. It generates an emoji password based on the length specified by user.
 
 ###### Settings
 
@@ -122,19 +132,31 @@ yarn test
 ```
 depending on your configuration.
 
+Result of test: 
+
+![img.png](pictures/img.png)
+
 ###### Use with example.js
 The example file, example.js, demonstrates how to use the library. To run this example:
 
 ```
-npm example
+npm exampleEmojiPassword
+npm exampleHybridPassword
 ``` 
 or
 
 ```
-yarn example
+yarn exampleEmojiPassword
+yarn exampleHybridPassword
 ```
 
 Running this command will display a generated emoji password in the console.
+
+Results of example:
+
+![img.png](pictures/img.png)
+
+![img_1.png](pictures/img_1.png)
 
 ## Tests
 
@@ -153,6 +175,9 @@ or
 yarn test
 ```
 
+Result of test:
+
+![img.png](pictures/img.png)
 
 ## Roadmap
 
@@ -171,3 +196,19 @@ To automate more tasks, like running tests on every pull request.
 
 ###### Multilingual support:
 Although emojis are universal, we plan to add documentations and interfaces in different languages ​​to make the generator accessible to a wider audience.
+
+## Changelog
+**v2.0.0** - 2023-10-19:
+- Add password generation with emoji
+- Update examples
+
+**v1.1.0** - 2023-10-18:
+- Update module file imports
+
+**v1.0.1** - 2023-10-18:
+- Fix translation in README
+
+**v1.0.0** - 2023-10-18:
+- Add emoji password generator
+- Add emoji password test
+- Add emoji password example

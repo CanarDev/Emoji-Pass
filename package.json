@@ -1,13 +1,14 @@
 {
   "name": "emoji-password-generator",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Un générateur de mots de passe basé sur des emojis",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "jest",
     "dev": "node index.js",
-    "example": "node example.js"
+    "exampleEmojiPassword": "node examples/exampleEmojiPassword.js",
+    "exampleHybridPassword": "node examples/exampleHybridPassword.js"
   },
   "author": "Vincent Michel",
   "license": "MIT",
