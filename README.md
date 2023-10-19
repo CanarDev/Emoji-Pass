@@ -26,8 +26,10 @@ link to the package: https://www.npmjs.com/package/emoji-password-generator
  ┣ 📂node_modules
  ┣ 📂tests
  ┃ ┗ 📜generator.test.js
+ ┣ 📂examples
+ ┃ ┗ 📜exampleEmojiPassword.js
+ ┃ ┗ 📜exampleHybridPassword.js
  ┣ 📜emoji-list.js
- ┣ 📜example.js
  ┣ 📜index.js
  ┗ 📜package.json
 ```
@@ -48,17 +50,21 @@ yarn add emoji-password-generator
 
 After installing the package, to generate an emoji-based password, simply run the command:
 ```
-npm example
+npm exampleEmojiPassword
+npm exampleHybridPassword
 ``` 
 or
 
 ```
-yarn example
+yarn exampleEmojiPassword
+yarn exampleHybridPassword
 ```
 
-Result of example:
+Results of example:
 
-![img_1.png](img_1.png)
+![img.png](pictures/img.png)
+
+![img_1.png](pictures/img_1.png)
 
 ## Documentation 
 
@@ -128,25 +134,29 @@ depending on your configuration.
 
 Result of test: 
 
-![img.png](img.png)
+![img.png](pictures/img.png)
 
 ###### Use with example.js
 The example file, example.js, demonstrates how to use the library. To run this example:
 
 ```
-npm example
+npm exampleEmojiPassword
+npm exampleHybridPassword
 ``` 
 or
 
 ```
-yarn example
+yarn exampleEmojiPassword
+yarn exampleHybridPassword
 ```
 
 Running this command will display a generated emoji password in the console.
 
-Result of example:
+Results of example:
 
-![img_1.png](img_1.png)
+![img.png](pictures/img.png)
+
+![img_1.png](pictures/img_1.png)
 
 ## Tests
 
@@ -167,7 +177,7 @@ yarn test
 
 Result of test:
 
-![img.png](img.png)
+![img.png](pictures/img.png)
 
 ## Roadmap
 
